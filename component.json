@@ -1,0 +1,9 @@
+{
+	"name":"SimpleTracker3000",
+	"version":"1.0.0",
+	"main":"./dist/simpletracker.js",
+	"dependencies":{
+		"jquery":"latest",
+		"angular":"latest"
+	}
+}
