@@ -24,5 +24,10 @@ angular.module('yourApp')
 <div tracker eventName='nameTheClickEvent'></div>
 ```
 ### End Result
-- The path your user has taken through your website (as tracked by clicks) will be sent to your server
-- along with any information you've stored in the user's cookie 
+- The path your user has taken through your website (as tracked by clicks) will be sent to your server every 15 seconds, along with any information you've stored in the user's cookie, in this format:
+```sh
+{
+path: [{eventName:'eventName', absUrl:'urlOfClick', date:'timeOfClick'},{eventName,absUrl,date},etc...]
+sessionData: cookieData
+}
+```
